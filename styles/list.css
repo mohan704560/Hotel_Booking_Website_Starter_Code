@@ -1,0 +1,16 @@
+body{
+    width:100vw;
+    height:100vh;
+}
+#container{
+    width:100vw;
+    height:100vh;
+}
+#logo{
+    height:60px;
+    width:60px;
+}
+.hotelImg{
+    height:250px;
+    width:250px;
+}
