@@ -1,6 +1,8 @@
 body{
     width:100vw;
     height:100vh;
+    margin:0%;
+    background-color: #e0e0e0;
 }
 #container{
     width:100vw;
@@ -13,4 +15,15 @@ body{
 .hotelImg{
     height:250px;
     width:250px;
+}
+header{
+    background-color: rosybrown;
+}
+footer{
+    background-color: rosybrown;
+}
+#list div{
+    margin:2%;
+    background-color: rgb(132,136,139);
+    width:40%;
 }

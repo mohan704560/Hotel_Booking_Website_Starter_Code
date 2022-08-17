@@ -1,6 +1,8 @@
 body{
     width:100vw;
     height:100vh;
+    margin:0px;
+    background-color: #e0e0e0;
 }
 #container{
     width:100vw;
@@ -13,4 +15,25 @@ body{
 #hotelImg img{
     height:150px;
     width:150px;
+}
+header{
+    background-color: rosybrown;
+}
+footer{
+    background-color: rosybrown;
+}
+#divsearch{
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+    height:380px;
+    width:100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#hotelImg{
+    margin:0px 15%;
+}
+#hotelImg img{
+    padding:4%;
+    border-radius: 25%;
 }
