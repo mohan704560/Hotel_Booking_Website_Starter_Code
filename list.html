@@ -4,21 +4,24 @@
             List
         </title>
         <link href="styles\list.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="container">
             <header>
                 <a href="index.html" target="_self"><img id="logo" src="assests\images\logo.png" alt="logo" height="200px" width="150px"/></a>
-                <a href="login.html" target="_self">Login</a>
+                <a href="login.html" target="_self" id="login">Login</a>
         </header>
         <div>
-            <ul style="list-style-type:disc">
+            <nav>
+            <ul>
             <li><a href="#list" target="_self">List View</a></li>
             <li><a href="#map" target="_self">Map View</a></li>
             </ul>
+        </nav>
             <section id="list">
-            <div>
-                <a href="detail.html" target="_self">
+                <div id="divhotelImg">
+                    <a href="detail.html" target="_self">
                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="hotelImg"/><br/>
                     <h3>Radisson Blu Hotel</h3>
                     <p>5 Star</p>
@@ -50,8 +53,9 @@
             <a href="https://www.instagram.com" target="_blank"><img src="assests\images\instagram.png" hieght="20px" width="22px"/></a>
             <a href="https://twitter.com" target="_blank"><img src="assests\images\twitter.png" hieght="20px" width="22px"/></a>
         </section>
-            <article>&copy; 2020 ROOM SEARCH PVT. LTD.</article>
+            <div>&copy; 2020 ROOM SEARCH PVT. LTD.</div>
     </footer>
+    <div id="spacer"></div>
         </div>
     </body>
 </html>

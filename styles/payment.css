@@ -1,12 +1,9 @@
 body{
-    width:100vw;
-    height:100vh;
+    width:100%;
+    height:100%;
     margin:0%;
     background-color: #e0e0e0;
-}
-#container{
-    width:100vw;
-    height:100vh;
+    font-family: 'Ubuntu', sans-serif;
 }
 #logo{
     height:60px;
@@ -39,4 +36,52 @@ footer{
     border:1px black solid;
     border-radius:5px;
     padding:1% 2%;
+}
+header{
+    background-color: rosybrown;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+    top:0px;
+    width:100%;
+}
+footer{
+    background-color: rosybrown;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height:60px;
+    width:100%;
+    position: fixed;
+    bottom:0px;
+}
+#login{
+    color: black;
+    text-decoration: none;
+    margin:15px;
+}
+footer section{
+    position:absolute;
+    right:15px;
+}
+footer > a{
+    text-decoration: none;
+    color:black;
+    position:absolute;
+    left:15px;
+}
+footer>div{
+    align-self:flex-end;
+    font-size: 12px;
+    position:relative;
+    bottom:8px;
+}
+#spacer{
+    width:100%;
+    height:100px;
+}
+#pay{
+    text-decoration: none;
+    color:black;
 }
