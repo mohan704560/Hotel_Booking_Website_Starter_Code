@@ -13,26 +13,31 @@
                 <a href="login.html" target="_self" id="login">Login</a>
         </header>
         <div>
-            <div><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="hotelimg"/></div>
-             <div>
+            <div id="detail">
+            <div id="img"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="hotelimg"/></div>
+             <div id="form">
                 <form action="payment.html" target="_self" method="get">
-                    <label for="adult">Adults:</label>
-                    <input type="number" id="number" name="adult" min="1" required/><br/>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required/><br/>
-                    <label for="fromDate">From Date:</label>
-                    <input type="date" id="fromDate" name="fromDate" required/><br/>
-                    <label for="toDate">To Date:</label>
-                    <input type="date" id="toDate" name="toDate" required/><br/>
-                    <label for="total">Total:</label>
-                    <input type="text" name="total"><br/>
-                    <button type="submit">Book Now</button>
+                    <div id="formcontent">
+                    <div><label for="adult">Adults:</label>
+                    <input type="number" id="number" name="adult" min="1" required/></div>
+                    <div><label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required/></div>
+                    <div><label for="fromDate">From Date:</label>
+                    <input type="date" id="fromDate" name="fromDate" required/></div>
+                    <div><label for="toDate">To Date:</label>
+                    <input type="date" id="toDate" name="toDate" required/></div>
+                    <div><label for="total">Total:</label>
+                    <input type="text" name="total"></div>
+                    <div><button type="submit">Book Now</button></div>
+                </div>
                 </form>
              </div>
+            </div>
              <div id="description">
               <h2>Radisson Blu Hotel</h2>
-              <p>RATING</p>
+              <h5>RATING</h5>
               <P>5 Star</P>
+              <h5>AMENITIES</h5>
               <ul style="list-style-type:disc">
                 <li>Room service</li>
                 <li>Restaurant</li>

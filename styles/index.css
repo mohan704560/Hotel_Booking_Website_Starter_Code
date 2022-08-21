@@ -8,10 +8,14 @@ body{
 #logo{
     height:60px;
     width:60px;
+    margin-left:1%;
 }
-#hotelImg img{
+.hotelimg{
     height:150px;
     width:150px;
+    padding:0%; 
+    border-radius: 25%; 
+    box-shadow: 10px 10px 10px grey;  
 }
 header{
     background-color: rosybrown;
@@ -51,27 +55,29 @@ footer{
     border-radius: 12px;
     width:400px;
 }
-#hotelImg{
-    margin:0px 15%;
+#search:focus{
+    outline:none;
 }
-#hotelImg img{
-    padding:4%;
-    border-radius: 25%;
+#hotelImg{
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-content: center;
 }
 header a{
     color: black;
     text-decoration: none;
-    margin:15px;
+    margin-right:2%;
 }
 footer section{
     position:absolute;
-    right:15px;
+    right: 2%;
 }
 footer > a{
     text-decoration: none;
     color:black;
     position:absolute;
-    left:15px;
+    left: 2%;
 }
 footer>div{
     align-self:flex-end;
@@ -88,6 +94,31 @@ footer>div{
     display:flex;
     justify-content: center;
 }
-
+#hotelImg a{
+    margin-top:4%;
+    margin-bottom:4%;
+    padding:0px;
+}
+section a>div{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.number{
+    position:absolute;
+    visibility:hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    height:150px;
+    width:150px;
+    border-radius:25%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:#f1f1f1;
+}
+.Hcontainer:hover>.number{
+    visibility:visible;
+    
+}
 
 
