@@ -1,4 +1,4 @@
-body{
+#container{
     width:100%;
     height: 100%;
     margin:0px;
@@ -17,7 +17,7 @@ body{
     border-radius: 25%; 
     box-shadow: 10px 10px 10px grey;  
 }
-header{
+#header{
     background-color: rosybrown;
     display:flex;
     align-items: center;
@@ -26,7 +26,7 @@ header{
     top:0px;
     width:100%;
 }
-footer{
+#footer{
     background-color: rosybrown;
     display:flex;
     align-items: center;
@@ -64,21 +64,16 @@ footer{
     justify-content: space-evenly;
     align-content: center;
 }
-header a{
-    color: black;
-    text-decoration: none;
-    margin-right:2%;
-}
 footer section{
     position:absolute;
     right: 2%;
 }
-footer > a{
+/* footer > a{
     text-decoration: none;
     color:black;
     position:absolute;
     left: 2%;
-}
+} */
 footer>div{
     align-self:flex-end;
     font-size: 12px;
@@ -117,8 +112,12 @@ section a>div{
     color:#f1f1f1;
 }
 .Hcontainer:hover>.number{
-    visibility:visible;
-    
+    visibility:visible;   
 }
+.contact{
+    position:absolute;
+    left:2%;
+}
+
 
 

@@ -5,7 +5,7 @@ body{
     background-color: #e0e0e0;
     font-family: 'Ubuntu', sans-serif;
 }
-header{
+#header{
     background-color: rosybrown;
     display:flex;
     align-items: center;
@@ -14,7 +14,7 @@ header{
     top:0px;
     width:100%;
 }
-footer{
+#footer{
     background-color: rosybrown;
     display:flex;
     align-items: center;
@@ -34,10 +34,10 @@ footer{
     width:500px;
     margin:auto;
 }
-header{
+#header{
     background-color: rosybrown;
 }
-footer{
+#footer{
     background-color: rosybrown;
 }
 /* form{
@@ -111,4 +111,8 @@ footer>div{
 }
 #description h5{
     font-family: cursive;
+}
+.contact{
+    position:absolute;
+    left:2%;
 }

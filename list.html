@@ -1,77 +1,143 @@
 <html>
-    <head>
-        <title>
-            List
-        </title>
-        <link href="styles\list.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="container">
-            <header>
-                <a href="index.html" target="_self"><img id="logo" src="assests\images\logo.png" alt="logo" height="200px" width="150px"/></a>
-                <a href="login.html" target="_self" id="login">Login</a>
+
+<head>
+    <title>
+        List
+    </title>
+    <link href="styles\list.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <a href="index.html" target="_self"><img id="logo" src="assests\images\logo.png" alt="logo" height="200px"
+                    width="150px" /></a>
+            <!-- <a href="login.html" target="_self" id="login">Login</a> -->
+            <button type="button" class="btn btn-light mx-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                LOGIN
+              </button>
         </header>
         <div>
-            <nav>
-            <ul>
-            <li><a href="#list" target="_self">List View</a></li>
-            <li><a href="#map" target="_self">Map View</a></li>
-            </ul>
-        </nav>
+            <nav class="navbar" style="position:static">
+              <form class="container-fluid justify-content-center form3">
+                <a href="#list" target="_self"><button class="btn btn-outline-primary me-2 border-0 text-black" type="button">List View</button></a>
+                <a href="#map" target="_self" id="mapLink"><button class="btn btn-outline-primary border-0 text-black" type="button">Map View</button></a>
+              </form>
+            </nav>
             <section id="list">
                 <div id="divhotelImg">
                     <a href="detail.html" target="_self">
-                    <div class="container2">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="hotelImg"/>
+                        <div class="container2">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                                class="hotelImg" />
+                        </div>
+                        <div class="discription pt-3">
+                            <h3>Radisson Blu Hotel</h3>
+                            <p>5.0 Star</p>
+                            <p>New Delhi</p>
+                        </div>
+                    </a>
                 </div>
-                    <div class="discription">
-                    <h3>Radisson Blu Hotel</h3>
-                    <p>5.0 Star</p>
-                    <p>New Delhi</p>
+                <div id="divhotelImg1">
+                    <a>
+                        <div class="container2">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
+                                class="hotelImg" />
+                        </div>
+                        <div class="discription pt-3">
+                            <h3>The Lalit New Delhi</h3>
+                            <p>4.5 Star</p>
+                            <p>New Delhi</p>
+                        </div>
+                    </a>
                 </div>
-                </a>
-            </div>
-            <div>
-                <a>
-                    <div class="container2">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" class="hotelImg"/>
-                    </div>
-                    <div class="discription">
-                    <h3>The Lalit New Delhi</h3>
-                    <p>4.5 Star</p>
-                    <p>New Delhi</p>
+                <div id="divhotelImg2">
+                    <a>
+                        <div class="container2">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
+                                class="hotelImg" />
+                        </div>
+                        <div class="discription pt-3">
+                            <h3>Taj Palace</h3>
+                            <p>4.0 Star</p>
+                            <p>New Delhi</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
-            </div>
-            <div>
-                <a>
-                    <div class="container2">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" class="hotelImg"/>
-                    </div>
-                    <div class="discription">
-                    <h3>Taj Palace</h3>
-                    <p>4.0 Star</p>
-                    <p>New Delhi</p>
-                </div>
-            </a>
-            </div>
             </section>
             <section id="map">
-                    <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"/>
-                    <p>MAP VIEW</p>
-        </section>
+                <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" />
+            </section>
         </div>
-        <footer>
-            <a href="contact.html" target="_self">Contact Us</a>
-        <section>
-            <a href="https://www.facebook.com" target="_blank"><img src="assests\images\facebook.png" hieght="20px" width="22px"/></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="assests\images\instagram.png" hieght="20px" width="22px"/></a>
-            <a href="https://twitter.com" target="_blank"><img src="assests\images\twitter.png" hieght="20px" width="22px"/></a>
-        </section>
+        <footer id="footer">
+            <!-- <a href="contact.html" target="_self">Contact Us</a> -->
+            <button type="button" class="btn btn-info contact text-white" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                Contact Us
+              </button>
+            <section>
+                <a href="https://www.facebook.com" target="_blank"><img src="assests\images\facebook.png" hieght="20px"
+                        width="22px" /></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assests\images\instagram.png"
+                        hieght="20px" width="22px" /></a>
+                <a href="https://twitter.com" target="_blank"><img src="assests\images\twitter.png" hieght="20px"
+                        width="22px" /></a>
+            </section>
             <div>&copy; 2020 ROOM SEARCH PVT. LTD.</div>
-    </footer>
-    <div id="spacer"></div>
+        </footer>
+        <div id="spacer"></div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+    
+            <div class="modal-body">
+              <form id="form1" action="index.html" method="get" target="_self">
+                <label for="username" class="mx-5 my-3">Username:</label>
+                <input type="text" id="username" class="me-5" name="username" style="width:50%" placeholder="Enter Username"
+                  required /><br />
+                <label for="password" class="mx-5 my-3">Password: </label>
+                <input type="password" id="password" class="me-5" name="password" style="width:50%"
+                  placeholder="Enter Password" required /><br />
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary mx-auto" form="form1">Login</button>
+            </div>
+    
+          </div>
         </div>
-    </body>
+      </div>
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Thank you for reaching out!!!<br/>
+                Please enter you email and we will get back to you</p>
+                <form id="form2" action="index.html" method="get" target="_self">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter your email id" name="email" id="email" required/><br/> 
+              </form> 
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary" form="form2">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

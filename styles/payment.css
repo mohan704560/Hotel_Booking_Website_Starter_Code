@@ -28,7 +28,7 @@ body{
     margin:2%;
     padding:1% 2%;
 }
-header{
+#header{
     background-color: rosybrown;
     display:flex;
     align-items: center;
@@ -37,7 +37,7 @@ header{
     top:0px;
     width:100%;
 }
-footer{
+#footer{
     background-color: rosybrown;
     display:flex;
     align-items: center;
@@ -106,4 +106,8 @@ footer>div{
 }
 b{
     font-family: cursive;
+}
+.contact{
+    position:absolute;
+    left:2%;
 }
