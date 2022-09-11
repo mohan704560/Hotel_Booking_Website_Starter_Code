@@ -75,14 +75,13 @@ footer>div{
     position:relative;
     bottom:8px;
 }
-#aview{
-   text-decoration: none;
-   color:black;
-   padding:0% 4% 6% 4%;
-}
 #view{
     display:flex;
     justify-content: center;
+    height:20vh;
+}
+#view>button{
+    height:50px;
 }
 #hotelImg a{
     margin-top:4%;
@@ -113,6 +112,9 @@ section a>div{
 .contact{
     position:absolute;
     left:2%;
+}
+.hidden{
+    display:none;
 }
 
 
