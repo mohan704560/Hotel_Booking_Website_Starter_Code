@@ -1,75 +1,24 @@
-body{
-    width:100%;
-    height: 100%;
-    margin:0px;
-    background-color: #e0e0e0;
-    font-family: 'Ubuntu', sans-serif;
-}
-#logo{
-    height:60px;
-    width:60px;
-    margin-left:1%;
-}
 .hotelImg{
     height:250px;
     width:250px;
 }
-#header{
-    background-color: rosybrown;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    position:sticky;
-    top:0px;
-    width:100%;
-}
-#footer{
-    background-color: rosybrown;
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height:60px;
-    width:100%;
-    position: fixed;
-    bottom:0px;
-}
-#list>div{
-    margin:2%;
+.divhotelImg{
+    margin: 25px;
     background-color: lightgrey;
     width:40%;
-}
-footer section{
-    position:absolute;
-    right:2%;
-}
-footer>div{
-    align-self:flex-end;
-    font-size: 12px;
-    position:relative;
-    bottom:8px;
+    clear:left;
 }
 .form3{
     display:flex;
     justify-content: center;
     align-items: center;
 }
-#divhotelImg{
-    clear:left;
-    margin:0px;
-}
-#list{
+#list > section{
+    width:100vw;
     display:flex;
-    flex-wrap:wrap;
-}
-#map{
-    display:Block;
-}
-/* #mapLink:active{
-    display:block;
-} */
-#spacer{
-    width:100%;
-    height:60px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 #list a{
     text-decoration:none;
@@ -79,16 +28,10 @@ footer>div{
 .discription{
     padding-left:2%;
 }
-#divhotelImg:hover{
+.divhotelImg:hover{
     background-color:rosybrown;
 }
-#divhotelImg1:hover{
-    background-color:rosybrown;
-}
-#divhotelImg2:hover{
-    background-color:rosybrown;
-}
-.contact{
-    position:absolute;
-    left:2%;
+#pills-tab{
+    display: flex;
+    justify-content: center;
 }
