@@ -14,17 +14,34 @@
     background-position: center;
     display:flex;
     justify-content: center;
-    align-items:center;
 }
-#search{
+.search{
     border:1px solid rgba(255,255,255,0);
     background-color: #f1f1f1;
     padding:10px;
     font-size: 16px;
     border-radius: 12px;
-    width:400px;
+    width:25%;
+    position:absolute;
+    top:200px;
+    order:1;
 }
-#search:focus{
+#divsearch>div{
+    display: block;
+    width:25%;
+    top:246px;
+    position: absolute;
+}
+.searchList{
+    border:1px solid rgba(255,255,255,0);
+    background-color: #f1f1f1;
+    padding:10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width:100%;
+    cursor: pointer;
+}
+.search:focus{
     outline:none;
 }
 #hotelImg{
@@ -39,19 +56,14 @@
     justify-content: center;
     height:20vh;
 }
-#view>button{
+#view>button{ 
     height:50px;
 }
 #hotelImg a{
-    margin-top:4%;
-    margin-bottom:4%;
-    padding:0px;
-    width:25%;
-}
-section a>div{
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items:center;
+    width: 150px;
+    margin: 0% auto;
 }
 .number{
     position:absolute;
@@ -65,12 +77,56 @@ section a>div{
     align-items:center;
     color:#f1f1f1;
 }
-.Hcontainer:hover>.number{
+.Hcontainer{
+    margin-top:4%;
+    margin-bottom:4%;
+    padding:0px;
+    width:25%; 
+}
+.Hcontainer>a:hover .number{
     visibility:visible;   
 }
 .hidden{
     display:none;
 }
 
+@media screen and (max-width:576px) {
+    .Hcontainer{
+        width: 100%;
+    } 
+    .number{
+       height: 200px;
+       width: 200px; 
+    }
+    #hotelImg a{
+        width: 200px;
+    }
+    .hotelimg{
+        height: 200px;
+        width:200px;
+    }
+    .search, #divsearch>div{
+        width:60%;
+    }   
+}
 
+@media screen and (min-width:576px) and (max-width:768px){
+    .Hcontainer{
+        width: 50%;
+    } 
+    .number{
+        height: 200px;
+        width: 200px; 
+     }
+     #hotelImg a{
+         width: 200px;
+     }
+     .hotelimg{
+         height: 200px;
+         width:200px;
+     }
+     .search, #divsearch>div{
+        width:50%;
+    }
+}
 

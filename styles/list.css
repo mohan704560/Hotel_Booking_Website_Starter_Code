@@ -35,3 +35,26 @@
     display: flex;
     justify-content: center;
 }
+#map{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:576px) {
+    #list a{
+        flex-direction: column;
+    } 
+    .divhotelImg{
+        width:90%;
+    } 
+    .hotelImg{
+        width:100%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    .divhotelImg{
+        width:90%;
+    } 
+}

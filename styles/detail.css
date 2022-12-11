@@ -1,7 +1,7 @@
 .hotelimg{
     height:380px;
     width:98%;
-    margin: auto;
+    margin: 10px auto;
     z-index: -1;
 }
 #description{
@@ -14,7 +14,6 @@
 }
 #Detail{
     display:flex;
-    height:400px;
     border:1px solid black;
     margin:2%;
 }
@@ -52,4 +51,17 @@
 }
 #description{
     font-family: cursive;
+}
+
+@media screen and (max-width:576px) {
+    #Detail{
+        flex-direction: column;
+    } 
+    #img{
+        width:100%;
+    }
+    #form{
+        width:100%;
+        border-left: none;
+    }
 }

@@ -1,9 +1,12 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
     Detail
   </title>
+  <link href="styles/loader.css" rel="stylesheet" />
   <link href="styles\detail.css" rel="stylesheet" />
   <link href="styles/common.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -12,6 +15,9 @@
 </head>
 
 <body onload="loginfunc()">
+  <div id="loaderContainer">
+    <div id="loader"></div>
+  </div>
   <div id="container">
     <header id="header">
     </header>
@@ -21,13 +27,16 @@
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width:100%">
             <div class="carousel-inner">
               <div class="carousel-item active ">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="d-block hotelimg" alt="..."/>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                  class="d-block hotelimg" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg" class="d-block hotelimg" alt="..."/>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg"
+                  class="d-block hotelimg" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg" class="d-block hotelimg" alt="..."/>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg"
+                  class="d-block hotelimg" alt="..." />
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -49,10 +58,10 @@
                 <input type="number" id="number" name="adult" min="1" required onchange="price()" />
               </div>
               <div><label for="name">Name:</label>
-                <input type="text" id="name" name="name" required/>
+                <input type="text" id="name" name="name" required />
               </div>
               <div><label for="fromDate">From Date:</label>
-                <input type="date" id="fromDate" name="fromDate" required onchange="price()"/>
+                <input type="date" id="fromDate" name="fromDate" required onchange="price()" />
               </div>
               <div><label for="toDate">To Date:</label>
                 <input type="date" id="toDate" name="toDate" required onchange="price()" />

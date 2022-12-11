@@ -56,3 +56,31 @@
 b{
     font-family: cursive;
 }
+
+@media screen and (max-width:576px) {
+    #description{
+        flex-direction: column;
+    } 
+    #plan{
+        flex-direction: column;
+    }
+    #description{
+        width:96%
+    }
+    #plan{
+        padding:2%;
+    }
+    #hotelImg{
+        max-width:100%;
+    }
+    #payDetail{
+        margin:0px;
+        padding:0px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    #description{
+        width:96%
+    }
+}

@@ -1,6 +1,6 @@
 // Hreader template
 var headerTemplate = `<a href="index.html" target="_self"><img id="logo" src="assests/images/logo.png" alt="logo" /></a>
-      <button type="button" id="login-btn" class="btn btn-light mx-5" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loginfunc()">LOGIN</button>`;
+      <button type="button" id="login-btn" class="btn btn-light mx-3" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loginfunc()">LOGIN</button>`;
 document.getElementById("header").innerHTML = headerTemplate;
 
 //Footer template
@@ -31,10 +31,10 @@ var modalTemplate = ` <div class="modal fade displaypro" id="exampleModal" tabin
   </div>
   <div class="modal-body">
     <form id="form1" onSubmit="adminLogin(event,username,password)" autocomplete="off">
-      <label for="username" class="mx-5 my-3">Username:</label>
-      <input type="text" id="username" class="me-5" name="username" style="width:50%" placeholder="Enter Username" required /><br />
-      <label for="password" class="mx-5 my-3">Password: </label>
-      <input type="password" id="password" class="me-5" name="password" style="width:50%" placeholder="Enter Password" required /><br />
+      <label for="username" class="my-3" style="width:40% ;text-align: center">Username:</label>
+      <input type="text" id="username" name="username" style="width:50%" placeholder="Enter Username" required /><br />
+      <label for="password" class="my-3" style="width:40%; text-align: center">Password: </label>
+      <input type="password" id="password" name="password" style="width:50%" placeholder="Enter Password" required /><br />
     </form>
   </div>
   <div class="modal-footer">
@@ -76,15 +76,17 @@ var adminLogin = (e,username1, password1) => {
       }
       sessionStorage.setItem('user-Detail', JSON.stringify(detail));
       alert('Successfully logged in');
-      window.location.href = window.location.href;
+      location.reload();
   }
 }
 
 // perform login and logout operation on the login button.
 var loginfunc=()=>{
+  document.getElementById("loaderContainer").style.display="none";
+  document.getElementById("container").style.display="block";
   if(document.getElementById('login-btn').innerText==='LOGIN'){
       var detail1=JSON.parse(sessionStorage.getItem('user-Detail'));
-     if(detail1.username==='admin'&& detail1.password==='admin'){
+     if(detail1 && detail1.username==='admin'&& detail1.password==='admin'){
        document.getElementById('login-btn').innerText='LOGOUT';
        document.getElementById('login-btn').setAttribute('data-bs-target','');
        document.getElementById('pay-btn').disabled=false;
@@ -97,21 +99,3 @@ var loginfunc=()=>{
       document.getElementById('pay-btn').disabled=true;
   }
 }
-
-// perform viewmore operation on viewmore button.
-var viewMore=()=>{
-    var id=document.getElementById('view-btn');
-   if(id.innerText==='View Less'){
-   Array.from(document.getElementsByClassName('hidden')).forEach(element => {
-        element.style.display="none";
-     });
-     id.innerText='View More';
-   }
-   else{
-    Array.from(document.getElementsByClassName('hidden')).forEach(element => {
-        element.style.display="inline";
-     });
-     id.innerText='View Less';
-   }
-}
-
