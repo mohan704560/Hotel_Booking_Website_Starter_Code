@@ -82,20 +82,20 @@ var adminLogin = (e,username1, password1) => {
 
 // perform login and logout operation on the login button.
 var loginfunc=()=>{
-  document.getElementById("loaderContainer").style.display="none";
-  document.getElementById("container").style.display="block";
   if(document.getElementById('login-btn').innerText==='LOGIN'){
       var detail1=JSON.parse(sessionStorage.getItem('user-Detail'));
      if(detail1 && detail1.username==='admin'&& detail1.password==='admin'){
        document.getElementById('login-btn').innerText='LOGOUT';
        document.getElementById('login-btn').setAttribute('data-bs-target','');
-       document.getElementById('pay-btn').disabled=false;
+       let payButton = document.getElementById('pay-btn');
+       payButton?payButton.disabled=false:"";
      } 
   }
   else{   
       document.getElementById('login-btn').innerText='LOGIN';
       document.getElementById('login-btn').setAttribute('data-bs-target','#exampleModal');
       sessionStorage.setItem('user-Detail',"");
-      document.getElementById('pay-btn').disabled=true;
+      let payButton = document.getElementById('pay-btn');
+       payButton?payButton.disabled=true:"";
   }
 }

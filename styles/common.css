@@ -6,7 +6,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 #container{
-    display: "none";
+    display:none
 }
 #logo{
     height:60px;

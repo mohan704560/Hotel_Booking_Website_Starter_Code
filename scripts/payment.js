@@ -51,5 +51,8 @@ document.getElementById("plan").innerHTML = cusDetailText;
 console.log(cusDetailText);
 console.log(amount);
 console.log(amount.split("%20"));
+
+document.getElementById("loaderContainer").style.display = "none";
+document.getElementById("container").style.display = "block";
 }
 
