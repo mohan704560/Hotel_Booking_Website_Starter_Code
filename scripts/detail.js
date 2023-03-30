@@ -30,11 +30,8 @@ var hotelDetail = async () => {
     options
   );
 
-  console.log(response);
   const data = await response.json();
   var hotelData = data.data[0];
-  console.log(data);
-  console.log(locationId);
   const ratingData = hotelData?.rating;
   let ratingString = "";
   for (var i = 1; i <= Math.trunc(ratingData); i++) {
