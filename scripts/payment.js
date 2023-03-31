@@ -15,7 +15,11 @@ var hotelInfo = async()=>{
     const data = await res.json();    
     console.log(data);
     var hotel = data.data[0];
-    populateDetails(hotel);
+    if(hotel){
+        populateDetails(hotel);
+    }else{
+        document.getElementById("container").innerHTML = `<h3 style="text-align:center">Server is not responding. Please try again later...</h3>`;
+    }
     
 }
 hotelInfo();

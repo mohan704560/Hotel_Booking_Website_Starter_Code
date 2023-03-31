@@ -32,7 +32,9 @@ var hotelDetail = async () => {
 
   const data = await response.json();
   var hotelData = data.data[0];
-  const ratingData = hotelData?.rating;
+  console.log(hotelData);
+  if(hotelData){
+  const ratingData = hotelData.rating;
   let ratingString = "";
   for (var i = 1; i <= Math.trunc(ratingData); i++) {
     ratingString += '<i class="fa-solid fa-star" style="color:orange"></i>';
@@ -56,9 +58,10 @@ var hotelDetail = async () => {
    </ul>
    <h5>DESCRIPTION</h5>
    <p>${hotelData.description}</p>`;
-
-  document.getElementById("description").innerHTML = descriptionText;
-
+   document.getElementById("description").innerHTML = descriptionText;
+}else{
+  document.getElementById("container").innerHTML = `<h3 style="text-align:center">Server is not responding. Please try again later...</h3>`;
+}
   document.getElementById("loaderContainer").style.display = "none";
   document.getElementById("container").style.display = "block";
 };

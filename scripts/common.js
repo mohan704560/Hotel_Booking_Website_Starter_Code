@@ -88,7 +88,6 @@ var loginfunc=()=>{
      if(detail1 && detail1.username==='admin'&& detail1.password==='admin'){
        document.getElementById('login-btn').innerText='LOGOUT';
        document.getElementById('login-btn').setAttribute('data-bs-target','');
-       
        payButton?payButton.disabled=true:"";
      } 
   }
